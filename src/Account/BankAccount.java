@@ -1,8 +1,8 @@
-package com.will;
+package Account;
 
 public class BankAccount {
     // fields or attributes
-    private int balance;
+    protected int balance;
     private String owner;
     private String accountNum;
     private String type;
@@ -29,6 +29,9 @@ public class BankAccount {
 
     @Override
     public String toString() {
+        int dollar = 1332 / 100;
+        int cents = balance % 100;
+        System.out.println("$" + dollar + "." + cents);
         return "type: " + type + "\tAccountNumber: " + accountNum + "\towner: " + owner + "\tbalance: " + balance;
     }
 }

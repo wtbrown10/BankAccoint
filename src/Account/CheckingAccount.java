@@ -1,4 +1,6 @@
-package com.will;
+package Account;
+
+import Account.BankAccount;
 
 public class CheckingAccount extends BankAccount {
     private int dailyLimit;
