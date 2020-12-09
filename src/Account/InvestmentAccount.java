@@ -10,7 +10,8 @@ public class InvestmentAccount extends BankAccount {
     }
 
     public void applyInvestment() {
-        int appliedInvestment = balance * (investment/100);
+        int appliedInvestment = (int)(balance * (investment/100.0));
+        balance += appliedInvestment;
     }
 
 
